@@ -1,0 +1,1 @@
+-nologo -c -TP -DFATBINFILE="\"queuing_intermediate_link.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"queuing_intermediate_link.reg.c\"" -I. /MD "-IE:\CudaToolKit\bin/../include"   -D "__CUDACC_VER__=70517" -D "__CUDACC_VER_BUILD__=17" -D "__CUDACC_VER_MINOR__=5" -D "__CUDACC_VER_MAJOR__=7" -EHsc "E:\CudaToolKit\bin\crt\link.stub" 

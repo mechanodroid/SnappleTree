@@ -1,0 +1,36 @@
+#line 496 "E:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\VC\\INCLUDE\\crtdefs.h"
+typedef unsigned size_t;
+#include "crt/device_runtime.h"
+#line 8 "E:/github/whippletree/segmentedStorage.cu"
+extern  __device__  __var_used__ const int _ZTVN10__cxxabiv120__si_class_type_infoE[];
+#line 43 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ void *_ZN16SegmentedStorage7storageE;
+#line 45 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ const int _ZTVSt13runtime_error[5];
+#line 46 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ const int _ZTVSt14error_category[9];
+#line 47 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ const int _ZTVSt23_Generic_error_category[9];
+#line 48 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ const int _ZTVSt24_Iostream_error_category[9];
+#line 49 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ const int _ZTVSt22_System_error_category[9];
+#line 50 "e:\\github\\whippletree\\segmentedStorage.cuh"
+extern  __device__  __var_used__ const int _ZTVN5Tools9CudaErrorE[5];
+#line 7 "E:/github/whippletree/segmentedStorage.cu"
+extern  __device__  __var_used__ void *storage;
+#include "common_functions.h"
+#line 45 "e:\\github\\whippletree\\segmentedStorage.cuh"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const int _ZTVSt13runtime_error[5] = {0,0,0,0,0};
+#line 46 "e:\\github\\whippletree\\segmentedStorage.cuh"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const int _ZTVSt14error_category[9] = {0,0,0,0,0,0,0,0,0};
+#line 47 "e:\\github\\whippletree\\segmentedStorage.cuh"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const int _ZTVSt23_Generic_error_category[9] = {0,0,0,0,0,0,0,0,0};
+#line 48 "e:\\github\\whippletree\\segmentedStorage.cuh"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const int _ZTVSt24_Iostream_error_category[9] = {0,0,0,0,0,0,0,0,0};
+#line 49 "e:\\github\\whippletree\\segmentedStorage.cuh"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const int _ZTVSt22_System_error_category[9] = {0,0,0,0,0,0,0,0,0};
+#line 50 "e:\\github\\whippletree\\segmentedStorage.cuh"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const int _ZTVN5Tools9CudaErrorE[5] = {0,0,0,0,0};
+#line 7 "E:/github/whippletree/segmentedStorage.cu"
+ __device__  __var_used__ void *storage = ((void *)0L);

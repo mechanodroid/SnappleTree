@@ -1,0 +1,10 @@
+﻿Build started 2/27/2016 11:57:32 PM.
+     1>Project "E:\github\whippletree\examples\queuing\build\ALL_BUILD.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule E:/github/whippletree/examples/queuing/CMakeLists.txt
+         CMake does not need to re-run because E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp is up-to-date.
+     1>Done Building Project "E:\github\whippletree\examples\queuing\build\ALL_BUILD.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12

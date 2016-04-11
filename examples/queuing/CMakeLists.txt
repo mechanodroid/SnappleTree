@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 2.8)
+
+project(queuing)
+
+include(../../cmake/common.cmake)
+include(../../queues.cmake)
+
+LIST(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_20,code=sm_20)
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0")
+
+set(CUDA_SEPARABLE_COMPILATION ON)
+
+SET(TEST_SOURCES
+  proc0.cuh
+  proc1.cuh
+  proc2.cuh
+  test.cu
+  main.cpp
+)
+
+if(CUDA_BUILD_CC35)
+  cuda_add_device_executable(queuing ${GENERAL} ${queues_SOURCES} ${TEST_SOURCES})
+else()
+  cuda_add_executable(queuing ${GENERAL} ${queues_SOURCES} ${TEST_SOURCES})
+endif()

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\github\whippletree\examples\queuing\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\github\whippletree\timing.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\github\whippletree\techniqueInterface.h">
+      <Filter>General</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\github\whippletree\techniqueMegakernel.cu">
+      <Filter>Techniques</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\github\whippletree\techniqueKernels.cu">
+      <Filter>Techniques</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\github\whippletree\delay.cu">
+      <Filter>Techniques</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\github\whippletree\segmentedStorage.cu">
+      <Filter>Queues</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\github\whippletree\examples\queuing\test.cu" />
+    <CustomBuild Include="E:\github\whippletree\examples\queuing\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\github\whippletree\queueInterface.cuh">
+      <Filter>General</Filter>
+    </None>
+    <None Include="E:\github\whippletree\procedureInterface.cuh">
+      <Filter>General</Filter>
+    </None>
+    <None Include="E:\github\whippletree\procinfoTemplate.cuh">
+      <Filter>General</Filter>
+    </None>
+    <None Include="E:\github\whippletree\random.cuh">
+      <Filter>General</Filter>
+    </None>
+    <None Include="E:\github\whippletree\techniqueMegakernel.cuh">
+      <Filter>Techniques</Filter>
+    </None>
+    <None Include="E:\github\whippletree\techniqueDynamicParallelism.cuh">
+      <Filter>Techniques</Filter>
+    </None>
+    <None Include="E:\github\whippletree\techniqueKernels.cuh">
+      <Filter>Techniques</Filter>
+    </None>
+    <None Include="E:\github\whippletree\delay.cuh">
+      <Filter>Techniques</Filter>
+    </None>
+    <None Include="E:\github\whippletree\segmentedStorage.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queueHelpers.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queueDistLocks.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queueExternalFetch.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queueCollector.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queueShared.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queuingMultiPhase.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\queuingPerProc.cuh">
+      <Filter>Queues</Filter>
+    </None>
+    <None Include="E:\github\whippletree\examples\queuing\proc0.cuh" />
+    <None Include="E:\github\whippletree\examples\queuing\proc1.cuh" />
+    <None Include="E:\github\whippletree\examples\queuing\proc2.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\$(Configuration)\queuing_intermediate_link.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3CFE93B4-9AE7-3CE0-A473-0C4A660CA377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{DB07C393-7316-37B7-BBD4-000820246193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General">
+      <UniqueIdentifier>{02784211-0344-39D1-A4B0-CAEA58B5123A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queues">
+      <UniqueIdentifier>{247FC468-DF98-3315-89F5-8973F653D9AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Techniques">
+      <UniqueIdentifier>{05A83911-9E62-3985-A1F6-D87ECB1A598D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

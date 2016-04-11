@@ -1,0 +1,20 @@
+#line 496 "E:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\VC\\INCLUDE\\crtdefs.h"
+typedef unsigned size_t;
+#include "crt/device_runtime.h"
+#line 3 "E:/github/whippletree/techniqueMegakernel.cu"
+extern  __device__  __var_used__ volatile int _ZN10Megakernel11doneCounterE;
+#line 4 "E:/github/whippletree/techniqueMegakernel.cu"
+extern  __device__  __var_used__ volatile int _ZN10Megakernel10endCounterE;
+#line 6 "E:/github/whippletree/techniqueMegakernel.cu"
+extern  __device__  __var_used__ int _ZN10Megakernel19maxConcurrentBlocksE;
+#line 7 "E:/github/whippletree/techniqueMegakernel.cu"
+extern  __device__  __var_used__ volatile int _ZN10Megakernel26maxConcurrentBlockEvalDoneE;
+#include "common_functions.h"
+#line 3 "E:/github/whippletree/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel11doneCounterE = 0;
+#line 4 "E:/github/whippletree/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel10endCounterE = 0;
+#line 6 "E:/github/whippletree/techniqueMegakernel.cu"
+ __device__  __var_used__ int _ZN10Megakernel19maxConcurrentBlocksE = 0;
+#line 7 "E:/github/whippletree/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel26maxConcurrentBlockEvalDoneE = 0;

@@ -1,0 +1,36 @@
+﻿Build started 2/28/2016 7:44:22 PM.
+     1>Project "E:\github\whippletree\examples\queuing\build\queuing.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         setlocal
+         "E:\Program Files (x86)\CMake\bin\cmake.exe" -E echo "Building NVCC intermediate link file CMakeFiles/queuing.dir/Debug/queuing_intermediate_link.obj"
+         if %errorlevel% neq 0 goto :cmEnd
+         E:\CudaToolKit\bin\nvcc.exe -use_fast_math -gencode=arch=compute_35,code=sm_35 -maxrregcount=63 -keep --ptxas-options=-v -lineinfo -m32 -ccbin "E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin" -Xcompiler /MDd       -dlink E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir/__/__/Debug/queuing_generated_techniqueMegakernel.cu.obj E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir/__/__/Debug/queuing_generated_techniqueKernels.cu.obj E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir/__/__/Debug/queuing_generated_delay.cu.obj E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir/__/__/Debug/queuing_generated_segmentedStorage.cu.obj E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir//Debug/queuing_generated_test.cu.obj -o E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir/Debug/queuing_intermediate_link.obj
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+         Building NVCC intermediate link file CMakeFiles/queuing.dir/Debug/queuing_intermediate_link.obj
+         queuing_generated_techniqueMegakernel.cu.obj
+         queuing_generated_techniqueKernels.cu.obj
+         queuing_generated_delay.cu.obj
+         queuing_generated_segmentedStorage.cu.obj
+         queuing_generated_test.cu.obj
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\whippletree\examples\queuing\build\Debug\queuing.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib E:\CudaToolKit\lib\Win32\cudart.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/github/whippletree/examples/queuing/build/Debug/queuing.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/github/whippletree/examples/queuing/build/Debug/queuing.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug queuing.dir\Debug\main.obj
+         E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\Debug\queuing_intermediate_link.obj
+     1>main.obj : error LNK2019: unresolved external symbol "void __cdecl runTest(int)" (?runTest@@YAXH@Z) referenced in function _main
+     1>queuing_intermediate_link.obj : error LNK2019: unresolved external symbol ___fatbinwrap_27_techniqueMegakernel_cpp1_ii_4b14c5aa referenced in function ___cudaRegisterLinkedBinary_27_techniqueMegakernel_cpp1_ii_4b14c5aa
+     1>queuing_intermediate_link.obj : error LNK2019: unresolved external symbol ___fatbinwrap_24_techniqueKernels_cpp1_ii_5e784bd0 referenced in function ___cudaRegisterLinkedBinary_24_techniqueKernels_cpp1_ii_5e784bd0
+     1>queuing_intermediate_link.obj : error LNK2019: unresolved external symbol ___fatbinwrap_13_delay_cpp1_ii_bf448b78 referenced in function ___cudaRegisterLinkedBinary_13_delay_cpp1_ii_bf448b78
+     1>queuing_intermediate_link.obj : error LNK2019: unresolved external symbol ___fatbinwrap_24_segmentedStorage_cpp1_ii_2b81d216 referenced in function ___cudaRegisterLinkedBinary_24_segmentedStorage_cpp1_ii_2b81d216
+     1>queuing_intermediate_link.obj : error LNK2019: unresolved external symbol ___fatbinwrap_12_test_cpp1_ii_32e214b0 referenced in function ___cudaRegisterLinkedBinary_12_test_cpp1_ii_32e214b0
+     1>E:\github\whippletree\examples\queuing\build\Debug\queuing.exe : fatal error LNK1120: 6 unresolved externals
+     1>Done Building Project "E:\github\whippletree\examples\queuing\build\queuing.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:09.20

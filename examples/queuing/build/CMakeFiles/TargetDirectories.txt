@@ -1,0 +1,3 @@
+E:/github/whippletree/examples/queuing/build/CMakeFiles/ALL_BUILD.dir
+E:/github/whippletree/examples/queuing/build/CMakeFiles/queuing.dir
+E:/github/whippletree/examples/queuing/build/CMakeFiles/ZERO_CHECK.dir

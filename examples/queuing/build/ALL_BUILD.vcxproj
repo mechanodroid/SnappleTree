@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1412E40E-151E-31D9-83A2-9ADBBA95694A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CudaToolKit\include;\components\core;E:\github\whippletree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CudaToolKit\include;\components\core;E:\github\whippletree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CudaToolKit\include;\components\core;E:\github\whippletree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CudaToolKit\include;\components\core;E:\github\whippletree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\github\whippletree\examples\queuing\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/github/whippletree/examples/queuing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/github/whippletree/examples/queuing -BE:/github/whippletree/examples/queuing/build --check-stamp-file E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/github/whippletree/examples/queuing/CMakeLists.txt;E:\github\whippletree\examples\queuing\CMakeLists.txt;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCCompiler.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\github\whippletree\cmake\common.cmake;E:\github\whippletree\cmake\FindCUDA.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;E:\github\whippletree\queues.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueMegakernel.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueKernels.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_delay.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_segmentedStorage.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\queuing_generated_test.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/github/whippletree/examples/queuing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/github/whippletree/examples/queuing -BE:/github/whippletree/examples/queuing/build --check-stamp-file E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/github/whippletree/examples/queuing/CMakeLists.txt;E:\github\whippletree\examples\queuing\CMakeLists.txt;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCCompiler.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\github\whippletree\cmake\common.cmake;E:\github\whippletree\cmake\FindCUDA.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;E:\github\whippletree\queues.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueMegakernel.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueKernels.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_delay.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_segmentedStorage.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\queuing_generated_test.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/github/whippletree/examples/queuing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/github/whippletree/examples/queuing -BE:/github/whippletree/examples/queuing/build --check-stamp-file E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/github/whippletree/examples/queuing/CMakeLists.txt;E:\github\whippletree\examples\queuing\CMakeLists.txt;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCCompiler.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\github\whippletree\cmake\common.cmake;E:\github\whippletree\cmake\FindCUDA.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;E:\github\whippletree\queues.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueMegakernel.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueKernels.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_delay.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_segmentedStorage.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\queuing_generated_test.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/github/whippletree/examples/queuing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/github/whippletree/examples/queuing -BE:/github/whippletree/examples/queuing/build --check-stamp-file E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/github/whippletree/examples/queuing/CMakeLists.txt;E:\github\whippletree\examples\queuing\CMakeLists.txt;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCCompiler.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;E:\github\whippletree\cmake\common.cmake;E:\github\whippletree\cmake\FindCUDA.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;E:\github\whippletree\queues.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueMegakernel.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_techniqueKernels.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_delay.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\__\__\queuing_generated_segmentedStorage.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\build\CMakeFiles\queuing.dir\queuing_generated_test.cu.obj.depend;E:\github\whippletree\cmake\FindCUDA\run_nvcc.cmake;E:\github\whippletree\examples\queuing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\github\whippletree\examples\queuing\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/github/whippletree/examples/queuing/build/ZERO_CHECK.vcxproj">
+      <Project>6C3D87AC-C1DD-341E-9C15-BC99B3162C6E</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/github/whippletree/examples/queuing/build/queuing.vcxproj">
+      <Project>3393945A-4F42-306C-B412-8EF111A1C83E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
