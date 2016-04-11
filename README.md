@@ -32,6 +32,7 @@ $ make
 For Snappletree, the example directory has subdirectories called render-cuda-SMK, render-cuda-WMK and render-cuda, each of these represents the three tested methods.  To get the program running you will need to have a variety of programs on your ubuntu box installed, and this is only tested to work on CUDA 7.5 with Ubuntu 14.04.
 Install the following:
 
+
 o	GCC with C++11
 o	OpenGL
 o	GLEW
