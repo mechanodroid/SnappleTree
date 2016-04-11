@@ -1,58 +1,22 @@
-## Overview
+## Whippletree Overview
 
-We present Whippletree, a novel approach to scheduling dynamic, irregular workloads on the GPU.
+Whippletree is a novel approach to scheduling dynamic, irregular workloads on the GPU.
 We introduce a new programming model which offers the simplicity and expressiveness of task-based
 parallelism while retaining all aspects of the multi-level execution hierarchy essential to 
-unlocking the full potential of a modern GPU. At the same time, our programming model lends 
-itself to efficient implementation on the SIMD-based architecture typical of a current GPU. 
-We demonstrate the practical utility of our model by providing a reference implementation on top 
-of current CUDA hardware. Furthermore, we show that our model compares favorably to traditional 
-approaches in terms of both performance as well as the range of applications that can be covered. 
-We demonstrate the benefits of our model for recursive Reyes rendering, procedural geometry 
-generation and volume rendering with concurrent irradiance caching.
+unlocking the full potential of a modern GPU. Whippletree was written by Mark Steinberger.
 
-## Paper reference
+## Snappletree overview
 
-Markus Steinberger, Michael Kenzel, Pedro Boechat, Bernhard Kerbl, Mark Dokter, and Dieter Schmalstieg.
-Whippletree: Task-based Scheduling of Dynamic Workloads on the GPU.
-ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2014), December 2014. To appear. \[ [.pdf](http://data.icg.tugraz.at/~dieter/publications/Schmalstieg_286.pdf ".pdf") \]
+Snappletree is an extension of Whippletree which uses hybrid dynamic parallelism along with the classic
+Whippletree queuing stucture.  End users (programmers of CUDA) can choose which queue they want the workload
+to be executed in: either the Whippletree (WMK) method or Hybrid Dynamic Parralelism (HDP).  We also test
+this on RenderCUDA, which is a renderer originally written by Thansis for the CUDA Showcase Zone.  If you 
+want to run this test bed, see below.
 
-## Getting started
-
-### Building on Linux
-
-*On Linux the CUDA compiler with C++11 support (CUDA 6.5RC or later) and cmake are required.*
-
-Clone the source tree and build basic examples:
-
-```
-$ git clone https://github.com/apc-llc/whippletree.git
-$ cd whippletree/examples/queuing
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
-```
-
-### Building on Windows
-
-*On Windows Microsoft Visual Studio with C++11 support (e.g. version 13), cmake and CUDA Toolkit are required.*
-
-Clone the source tree and build basic examples:
-
-```
-> git clone https://github.com/apc-llc/whippletree.git
-> cd whippletree\examples\queuing
-> mkdir build
-> cd build
-> cmake -DCUDA_TOOLKIT_ROOT_DIR="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5" ..
-```
-
-Then open `Example` VC++ project in Visual Studio and build `Example` target.
 
 ### Running
 
-Three different procedures are defined using `proc0.cuh`, `proc1.cuh` and `proc2.cuh`. The host control logic is found in `test.cu` and could be executed via `queuing` binary:
+For the original Whippletree, three different procedures are defined using `proc0.cuh`, `proc1.cuh` and `proc2.cuh`. The host control logic is found in `test.cu` and could be executed via `queuing` binary:
 
 ```
 $ ./queuing
@@ -65,3 +29,15 @@ $ cmake -DCUDA_BUILD_CC30=TRUE ..
 $ make 
 ```
 
+For Snappletree, the example directory has subdirectories called render-cuda-SMK, render-cuda-WMK and render-cuda, each of these represents the three tested methods.  To get the program running you will need to have a variety of programs on your ubuntu box installed, and this is only tested to work on CUDA 7.5 with Ubuntu 14.04.
+Install the following:
+
+o	GCC with C++11
+o	OpenGL
+o	GLEW
+o	GLUT
+o	libSDL
+
+Also install any dependencies needed by the above
+
+Now you can enter each of the test directories (render-cuda-SMK, etc) and run ./whippletree 3D-objects/chessboard.tri
